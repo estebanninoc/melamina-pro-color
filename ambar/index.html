@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curso de Carpinteria en Melamina: 563 archivos en 15 bloques + 511 laminas de planos | MELAMINA PRO (v2)</title>
+<meta name="description" content="563 archivos de curso repartidos en 15 bloques por tema, 466 de ellos en video: melamina, SketchUp, Resina Epoxica y Polyboard, entre otros. Ademas, la biblioteca completa de planos: 511 laminas acotadas y 18 PDF listos para cortar. Pago unico, acceso inmediato.">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="Curso de Carpinteria en Melamina: 563 archivos en 15 bloques + 511 laminas de planos | MELAMINA PRO (v2)">
+<meta property="og:description" content="563 archivos de curso repartidos en 15 bloques por tema, 466 de ellos en video: melamina, SketchUp, Resina Epoxica y Polyboard, entre otros. Ademas, la biblioteca completa de planos: 511 laminas acotadas y 18 PDF listos para cortar. Pago unico, acceso inmediato.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://estebanninoc.github.io/melamina-pro-a/video/hero.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text y='19' font-size='20'>&#129692;</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- v3.1 peso: la hoja de fuentes YA NO BLOQUEA el primer render. Se pinta con
+     la del sistema y la web font entra cuando llega (display=swap). El noscript
+     la deja bloqueante si no hay JS, para no quedar nunca sin fuente legible. -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@800;900&family=Inter:wght@400;600;700;800&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@800;900&family=Inter:wght@400;600;700;800&display=swap"></noscript>
+<!-- el poster del hero es lo primero que se ve: se pide de una y con prioridad.
+     Ya no viene de un tercero: es un frame de nuestro propio clip, 17162 B
+     a 360px de ancho. El clip pesa 1190363 B y lo pide el JS, no el parser. -->
+<link rel="preload" as="image" href="../video/hero.jpg" fetchpriority="high">
+<style>
+  :root{
+    /* PALETA C — NOGAL + AMBAR — variante de PIEL sobre el molde v4 publicado.
+       El target no cambia: 76% hombres · 59,6% de 45 anos o mas ·
+       99,9% Android · 87% Facebook. Cambia la piel, no la mecanica.
+       C AMBAR — mismo sustrato que la publicada; el 2o acento pasa de TEAL
+       a AMBAR-DORADO. Nada frio en la pagina: todo madera y laton.
+       LO QUE CUESTA, MEDIDO Y NO ESCONDIDO: el ambar esta a 21 grados
+       de hue del naranja (43 vs 22). En un celular a 45 cm los bonos y
+       el precio se leen del MISMO color, que es justo lo que el 2o
+       acento venia a separar. Y naranja-vs-ambar es el par que peor
+       distingue un ojo con deuteranopia, sobre un publico 76% hombres.  */
+    --bg:#1a120b; --panel:#241a11; --panel2:#302317; --line:#6b4f3c;
+    --tx:#fff6ee; --mut:#ecdac9; --dim:#d2bdaa;
+    --acc:#ff6a13; --acc2:#ff9a4d; --ink:#0d0500;
+    --acc3:#f5c65a;
+    --steel:#a89383; --deep:#0f0a06;
+    --radius:16px; --max:1080px;
+    --disp:"Inter Tight","Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+    --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  /* v4: base 17px. El target es 59,6% de 45 anos o mas: la presbicia es la
+     NORMA, no la excepcion. Medido antes: 424 textos de cuerpo bajo 17px,
+     el grueso del cuerpo a 15,2px. 1rem pasa a valer 17px. */
+  html{font-size:17px;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{background:var(--bg);color:var(--tx);font-family:var(--sans);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+  h1,h2,h3{font-family:var(--disp);font-weight:900;letter-spacing:-.035em;line-height:1.05}
+  a{color:inherit;text-decoration:none}
+  ::selection{background:var(--acc);color:var(--ink)}
+
+  /* BOTONES: pastilla del acento con texto casi negro (el mismo contraste que
+     el molde logra con blanco sobre negro, aca con el naranja de herramienta) */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--acc);color:var(--ink);font-family:var(--disp);font-weight:800;letter-spacing:-.01em;font-size:1.05rem;padding:16px 36px;border-radius:999px;border:none;cursor:pointer;transition:transform .15s ease,box-shadow .15s ease;box-shadow:0 0 0 1px rgba(255,106,19,.45),0 8px 26px -6px rgba(255,106,19,.9),0 0 52px -6px rgba(255,106,19,.55)}
+  .btn:hover{transform:translateY(-2px);background:var(--acc2);box-shadow:0 0 0 1px rgba(255,154,77,.6),0 14px 34px -6px rgba(255,106,19,1),0 0 72px -4px rgba(255,106,19,.7)}
+  .btn.big{font-size:1.2rem;padding:20px 46px}
+  /* el ghost SI es un control: su borde necesita el 3:1 de WCAG 1.4.11 y
+     --line se queda en 2,47. Va con borde de acento (6,45:1). */
+  .btn.ghost{background:transparent;color:var(--tx);border:1.5px solid rgba(255,154,77,.75);box-shadow:none}
+  .btn.ghost:hover{border-color:var(--acc);background:transparent;box-shadow:none}
+  .btn[aria-disabled="true"]{background:var(--panel2);color:var(--mut);border:1px solid var(--line);box-shadow:none;cursor:not-allowed;transform:none}
+
+  /* MARCA */
+  .logo{display:flex;align-items:center;gap:10px;font-family:var(--disp);font-weight:900;font-size:1.18rem;letter-spacing:-.04em}
+  .logo .mark{width:30px;height:30px;border-radius:8px;background:var(--acc);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .logo .sub{font-weight:700;font-size:.78rem;letter-spacing:.14em;color:var(--acc2);text-transform:uppercase;margin-left:2px;align-self:flex-end;padding-bottom:2px}
+
+  nav{position:sticky;top:0;z-index:50;background:rgba(26,18,11,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+  nav .btn{padding:11px 22px;font-size:1rem}
+
+  /* HERO */
+  /* GLOW DEL HERO: el resplandor SI pinta debajo del h1 y del subtitulo, asi
+     que su tope no es estetico sino medido: al 16% sobre --bg el peor texto
+     de la zona (--acc2) queda en 7,02:1; al 22% cae a 6,30 y rompe AAA.
+     Va al 16% naranja + una segunda capa teal al 10% que le da profundidad
+     sin tocar el contraste (teal 10% deja --acc2 en 7,44). */
+  header{position:relative;padding:74px 0 60px;background:radial-gradient(90% 62% at 50% -4%,rgba(255,106,19,.16),transparent 66%),radial-gradient(70% 50% at 88% 6%,rgba(55,214,192,.10),transparent 62%)}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+  .pill{display:inline-flex;gap:8px;align-items:center;box-shadow:0 0 0 1px rgba(255,106,19,.16),0 6px 22px -14px rgba(255,106,19,.9);font-size:1rem;font-weight:700;color:var(--tx);background:var(--panel2);border:1px solid var(--line);padding:7px 16px;border-radius:999px;margin-bottom:22px;letter-spacing:.01em}
+  .pill b{color:var(--acc2)}
+  header h1{font-size:clamp(2.2rem,6vw,3.8rem);margin-bottom:18px}
+  header h1 .cut{position:relative;display:inline-block}
+  header h1 .cut::after{content:"";position:absolute;left:0;right:0;bottom:-.1em;height:.12em;background:var(--acc);transform:skewX(-18deg)}
+  header p.sub{font-size:clamp(1.05rem,2.4vw,1.28rem);color:var(--mut);max-width:600px;margin:0 0 30px}
+  header p.sub b{color:var(--tx)}
+  .cta-row{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+  .cta-note{color:var(--dim);font-size:1rem;margin-top:14px}
+
+  /* MOCKUP: el telefono en el taller. La tira de abajo no es una linea de
+     tiempo de video: son las piezas del despiece sobre el tablero. */
+  .device{width:262px;justify-self:center;filter:drop-shadow(0 26px 60px rgba(255,106,19,.45)) drop-shadow(0 0 40px rgba(255,106,19,.25))}
+  .phone{background:var(--bg);border:2px solid var(--line);border-radius:42px;padding:11px;position:relative}
+  .phone::before{content:"";position:absolute;top:14px;left:50%;transform:translateX(-50%);width:80px;height:6px;border-radius:99px;background:var(--line);z-index:3}
+  .screen{border-radius:32px;overflow:hidden;background:var(--deep);border:1px solid var(--line)}
+  .pv{position:relative;overflow:hidden;aspect-ratio:9/12;background:radial-gradient(120% 75% at 50% 22%,rgba(255,106,19,.30),transparent 62%),linear-gradient(165deg,var(--panel2),var(--bg));display:flex;align-items:center;justify-content:center}
+  .pv .vd-hero{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:0;pointer-events:none;z-index:1}
+  .pv .pv-poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;filter:brightness(.85)}
+  .pv .tag{position:absolute;z-index:2;top:12px;left:12px;font-size:.6rem;font-weight:800;color:var(--ink);background:var(--acc);padding:4px 10px;border-radius:99px}
+  .pv .rec{position:absolute;z-index:2;top:12px;right:12px;font-size:.58rem;font-weight:700;color:var(--tx);display:flex;align-items:center;gap:5px}
+  .pv .rec::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--acc);box-shadow:0 0 8px var(--acc)}
+  .tl{background:var(--bg);padding:10px 9px 13px}
+  .tl .tools{display:flex;gap:12px;justify-content:space-around;margin-bottom:9px}
+  .tl .tools i{width:20px;height:3px;border-radius:99px;background:var(--steel)}
+  .tl .tools i:first-child{background:var(--acc)}
+  .tl .track{display:flex;gap:3px;align-items:center}
+  .tl .clip{height:22px;border-radius:4px;flex:1}
+  .tl .clip.a{background:linear-gradient(120deg,var(--acc2),var(--acc))}
+  .tl .clip.b{background:linear-gradient(120deg,var(--mut),var(--steel))}
+  .tl .clip.c{background:linear-gradient(120deg,var(--dim),var(--line))}
+  .tl .clip.d{background:linear-gradient(120deg,var(--steel),var(--panel));flex:.55}
+  .tl .scrub{width:2px;height:30px;background:var(--acc);border-radius:2px;box-shadow:0 0 14px 1px rgba(255,106,19,1);margin:0 1px}
+
+  /* CIFRAS */
+  .badges{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:52px auto 0;max-width:880px}
+  .badge{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:22px 12px;text-align:center;box-shadow:0 0 0 1px rgba(255,106,19,.10),0 12px 30px -20px rgba(255,106,19,.75)}
+  .badge .n{font-family:var(--disp);font-size:clamp(1.6rem,4vw,2.3rem);font-weight:900;line-height:1;letter-spacing:-.03em;color:var(--acc)}
+  .badge .l{color:var(--mut);font-size:1rem;margin-top:8px}
+
+  section{padding:66px 0}
+  .eyebrow{color:var(--acc2);font-weight:800;font-size:.92rem;text-transform:uppercase;letter-spacing:.14em;margin-bottom:12px}
+  h2.title{font-size:clamp(1.8rem,4.5vw,2.7rem);margin-bottom:14px}
+  .lead{color:var(--mut);font-size:1.08rem;max-width:660px;margin-bottom:8px}
+  .lead b{color:var(--tx)}
+
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:26px;transition:border-color .2s,box-shadow .2s;box-shadow:0 0 0 1px rgba(255,106,19,.08),0 14px 34px -24px rgba(255,106,19,.7)}
+  .card:hover{border-color:var(--acc);box-shadow:0 0 0 1px rgba(255,106,19,.35),0 16px 40px -18px rgba(255,106,19,.85)}
+  .card .ic{font-size:1.6rem;margin-bottom:12px}
+  .card h3{font-size:1.15rem;margin-bottom:8px;letter-spacing:-.02em}
+  .card p{color:var(--mut);font-size:1.05rem}
+
+  /* GALERIA DE VIDEO: la mecanica exacta del molde */
+  .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:36px}
+  .fx{position:relative;aspect-ratio:3/4;border-radius:14px;overflow:hidden;border:1px solid var(--line);box-shadow:0 0 0 1px rgba(255,106,19,.10),0 10px 28px -22px rgba(255,106,19,.8);display:flex;align-items:flex-end;padding:14px;isolation:isolate;transition:transform .18s ease,border-color .18s}
+  .fx:hover{border-color:var(--acc);transform:translateY(-3px);box-shadow:0 0 0 1px rgba(255,106,19,.45),0 14px 34px -16px rgba(255,106,19,.9)}
+  .fx .vd-live{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:0;pointer-events:none;z-index:-1}
+  .fx .fx-th{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+  .fx::before{content:"";position:absolute;inset:0;z-index:-2;background:var(--g)}
+  .fx::after{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(90% 60% at 30% 18%,rgba(255,255,255,.18),transparent 55%),linear-gradient(180deg,transparent 28%,rgba(0,0,0,.82))}
+  .fx .ply{position:absolute;top:12px;right:12px;width:26px;height:26px;border-radius:50%;background:rgba(0,0,0,.45);border:1.5px solid var(--acc);display:flex;align-items:center;justify-content:center}
+  .fx .ply::after{content:"";border-left:8px solid var(--acc);border-top:5px solid transparent;border-bottom:5px solid transparent;margin-left:2px}
+  .fx span{font-family:var(--disp);font-weight:800;font-size:.95rem;line-height:1.15;letter-spacing:-.01em;text-shadow:0 2px 10px rgba(0,0,0,.85);z-index:1}
+  /* v3: 8 gradientes con 16 hex sueltos -> 2 gradientes de tokens.
+     Medido: el stop claro de g1 (#f2f2f5) daba 1.09:1 contra el titulo blanco
+     del tile. Los 8 pares bajo el piso estaban todos aca. */
+  .fx.g1,.fx.g3,.fx.g5,.fx.g7{--g:linear-gradient(150deg,var(--panel2),var(--bg))}
+  .fx.g2,.fx.g4,.fx.g6,.fx.g8{--g:linear-gradient(150deg,var(--panel),var(--bg))}
+  .fx-note{color:var(--dim);font-size:1rem;margin-top:16px;max-width:760px}
+  /* reja de encuadre: si entra un 16:9 se ve CHICO Y BIEN, nunca grande y roto */
+  .fx.h16{aspect-ratio:16/9}
+  .fx.h16 .vd-live{object-fit:contain;background:var(--bg)}
+  .fx.h16 .fx-th{object-fit:contain;background:var(--bg)}
+  .pv.h16{aspect-ratio:16/9}
+  .pv.h16 .vd-hero{object-fit:contain;background:var(--bg)}
+  .pv.h16 .pv-poster{object-fit:contain;background:var(--bg)}
+
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}
+  .step{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:0 0 0 1px rgba(255,106,19,.08),0 14px 34px -24px rgba(255,106,19,.7)}
+  .step .num{width:38px;height:38px;border-radius:50%;background:var(--acc);color:var(--ink);box-shadow:0 0 22px -2px rgba(255,106,19,.85);font-family:var(--disp);font-weight:900;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+  .step h3{font-size:1.1rem;margin-bottom:8px}
+  .step p{color:var(--mut);font-size:1.05rem}
+
+  .acc{margin-top:34px;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--panel);box-shadow:0 0 0 1px rgba(255,106,19,.08),0 16px 40px -30px rgba(255,106,19,.7)}
+  details{border-bottom:1px solid var(--line)}
+  details:last-child{border-bottom:none}
+  summary{cursor:pointer;list-style:none;padding:20px 24px;display:flex;justify-content:space-between;align-items:center;font-weight:700;font-size:1.03rem;gap:14px}
+  summary::-webkit-details-marker{display:none}
+  summary .meta{color:var(--acc2);font-weight:700;font-size:1rem;flex-shrink:0}
+  summary::after{content:"+";color:var(--acc);font-size:1.5rem;font-weight:300;flex-shrink:0}
+  details[open] summary::after{content:"\2013"}
+  .acc-body{padding:0 24px 22px;color:var(--mut);font-size:1.05rem}
+  .acc-body ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:6px 24px}
+  .acc-body li{padding-left:18px;position:relative}
+  .acc-body li::before{content:"\203a";position:absolute;left:0;color:var(--acc2)}
+
+  /* BANDA: foto de taller de fondo (poster de uno de nuestros clips) */
+  .band{position:relative;min-height:360px;display:flex;align-items:center;overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .band img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;filter:grayscale(.35) contrast(1.08)}
+  .band::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,var(--bg) 8%,rgba(26,18,11,.80) 46%,rgba(26,18,11,.32) 100%)}
+  .band .wrap{padding:62px 20px}
+  .band h2{font-size:clamp(1.6rem,4.2vw,2.5rem);max-width:620px;margin-bottom:12px}
+  .band p{color:var(--mut);max-width:520px;font-size:1.05rem}
+
+  /* ANCLAJE de precio: la suma de las piezas contra el precio de hoy */
+  .anchor{max-width:640px;margin:34px auto 0;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+  .anchor .row{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:16px 22px;border-bottom:1px solid var(--line);font-size:1.05rem}
+  .anchor .row span{color:var(--mut)}
+  .anchor .row b{font-family:var(--disp);font-weight:900;white-space:nowrap}
+  .anchor .row.sum{background:var(--panel2)}
+  .anchor .row.sum b{color:var(--mut);text-decoration:line-through}
+  .anchor .row.hoy{border-bottom:none;padding:20px 22px}
+  .anchor .row.hoy span{color:var(--tx);font-weight:800}
+  .anchor .row.hoy b{color:var(--acc);font-size:1.5rem;text-shadow:0 0 24px rgba(255,106,19,.7)}
+  .anchor-note{color:var(--dim);font-size:1rem;text-align:center;margin-top:12px;max-width:640px;margin-left:auto;margin-right:auto}
+
+  /* OBJECIONES */
+  .obj{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:38px}
+  .ob{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--acc);border-radius:12px;padding:22px 24px;box-shadow:-6px 0 22px -16px rgba(255,106,19,.9),0 12px 30px -24px rgba(255,106,19,.6)}
+  .ob h3{font-size:1.02rem;margin-bottom:8px;color:var(--tx)}
+  .ob h3::before{content:"\201c";color:var(--acc);font-size:1.4rem;line-height:0;vertical-align:-.1em;margin-right:2px}
+  .ob h3::after{content:"\201d";color:var(--acc);font-size:1.4rem;line-height:0;vertical-align:-.1em;margin-left:2px}
+  .ob p{color:var(--mut);font-size:1.05rem}
+
+  /* BONOS APILADOS */
+  .stack{display:grid;gap:12px;margin-top:34px;max-width:760px}
+  /* BONOS EN TEAL: la separacion de bono vs precio que pedia el target.
+     El borde y el glow son --acc3; el precio de abajo sigue naranja. */
+  .st{display:flex;align-items:center;gap:16px;background:var(--panel);border:1px solid rgba(55,214,192,.34);border-radius:14px;padding:18px 22px;box-shadow:0 0 0 1px rgba(55,214,192,.10),0 12px 30px -22px rgba(55,214,192,.85)}
+  .st .ic{font-size:1.5rem;flex-shrink:0}
+  .st .tt{flex:1}
+  .st .tt b{display:block;font-size:1.02rem}
+  .st .tt small{color:var(--mut);font-size:1rem}
+  .st .vv{font-family:var(--disp);font-weight:900;white-space:nowrap;text-align:right}
+  .st .vv s{color:var(--dim);display:block;font-size:1rem;font-weight:700}
+  .st .vv em{color:var(--acc3);font-style:normal;font-size:1rem;font-weight:800}
+
+  /* la GARANTIA tambien es teal: no es lo que pagas, es lo que te protege */
+  .guar{background:linear-gradient(135deg,var(--panel2),var(--panel));border:1.5px solid var(--acc3);border-radius:24px;padding:44px;text-align:center;max-width:760px;margin:0 auto;box-shadow:0 0 70px -26px rgba(55,214,192,.9),0 0 0 1px rgba(55,214,192,.16)}
+  .guar .shield{font-size:3rem;margin-bottom:12px}
+
+  .price-card{background:linear-gradient(160deg,var(--panel2),var(--bg));border:1.5px solid var(--acc);border-radius:24px;padding:46px 34px;text-align:center;max-width:540px;margin:38px auto 0;box-shadow:0 0 0 1px rgba(255,106,19,.30),0 0 90px -18px rgba(255,106,19,.95),0 18px 50px -30px rgba(255,106,19,.8)}
+  .price-now{font-family:var(--disp);font-size:3.4rem;font-weight:900;line-height:1;margin:6px 0 4px;letter-spacing:-.04em;color:var(--acc);text-shadow:0 0 34px rgba(255,106,19,.8),0 0 12px rgba(255,106,19,.5)}
+  .price-list{list-style:none;text-align:left;margin:26px 0;display:grid;gap:11px}
+  .price-list li{padding-left:30px;position:relative;color:var(--tx);font-size:1.05rem}
+  .price-list li::before{content:"\2713";position:absolute;left:0;color:var(--acc);font-weight:900;text-shadow:0 0 12px rgba(255,106,19,.75)}
+  .price-card .btn{width:100%}
+
+  .bumps{margin:2px 0 20px;display:grid;gap:10px;text-align:left}
+  .bump{display:flex;align-items:flex-start;gap:12px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px;cursor:pointer;transition:border-color .15s}
+  .bump:hover{border-color:var(--acc2)}
+  /* el bump marcado: 10% es el tope medido sobre --panel (--acc2 queda en
+     7,05:1); al 16% cae a 6,38 y el texto del bump deja de ser AAA. */
+  .bump.on{border-color:var(--acc);background:rgba(255,106,19,.10);box-shadow:0 0 0 1px rgba(255,106,19,.35),0 8px 24px -16px rgba(255,106,19,.9)}
+  .bump input{display:none}
+  .bump .bx{width:22px;height:22px;border-radius:6px;border:1.5px solid var(--line);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:900;color:var(--ink);transition:.15s;margin-top:2px}
+  .bump input:checked ~ .bx{background:var(--acc);border-color:var(--acc);box-shadow:0 0 16px -2px rgba(255,106,19,.9)}
+  .bump input:checked ~ .bx::after{content:"\2713"}
+  .bump .bt{flex:1;font-size:1.05rem;line-height:1.35}
+  .bump .bt small{display:block;color:var(--mut);font-weight:500;font-size:1rem;margin-top:4px}
+  .bump .bp{font-family:var(--disp);font-weight:900;font-size:1.05rem;color:var(--acc2);white-space:nowrap}
+  .bump-nota{font-size:1rem;color:var(--mut);text-align:center;background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:8px 12px}
+  .bump-nota b{color:var(--acc2)}
+
+  .aviso{max-width:540px;margin:16px auto 0;background:var(--panel2);border:1px dashed var(--acc);box-shadow:0 0 26px -18px rgba(255,106,19,.9);border-radius:12px;padding:14px 16px;color:var(--mut);font-size:1rem}
+  .aviso b{color:var(--acc2)}
+
+  footer{border-top:1px solid var(--line);padding:40px 0 110px;text-align:center;color:var(--mut);font-size:1rem}
+  .disc{color:var(--dim);font-size:.75rem;max-width:760px;margin:16px auto 0;line-height:1.55}
+
+  .buybar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;align-items:center;justify-content:space-between;gap:12px;background:rgba(26,18,11,.94);backdrop-filter:blur(12px);border-top:1px solid rgba(255,106,19,.45);box-shadow:0 -10px 40px -18px rgba(255,106,19,.9);padding:12px 16px calc(12px + env(safe-area-inset-bottom))}
+  .buybar .p{font-family:var(--disp);font-weight:900;font-size:1.22rem;letter-spacing:-.02em;line-height:1.1;color:var(--acc);text-shadow:0 0 20px rgba(255,106,19,.7)}
+  .buybar .p small{display:block;font-family:var(--sans);font-weight:600;font-size:.85rem;color:var(--mut);letter-spacing:.02em}
+  .buybar .btn{padding:13px 22px;font-size:1.05rem;flex-shrink:0}
+
+  @media(max-width:820px){
+    .badges{grid-template-columns:repeat(2,1fr)}
+    .grid,.steps,.obj{grid-template-columns:1fr}
+    .acc-body ul{grid-template-columns:1fr}
+    .hero-grid{grid-template-columns:1fr;text-align:center;gap:36px}
+    .hero-copy .pill{margin-left:auto;margin-right:auto}
+    header p.sub{margin-left:auto;margin-right:auto}
+    .cta-row{justify-content:center}
+    .device{width:225px;margin-top:4px}
+    .gallery{grid-template-columns:repeat(2,1fr);gap:9px}
+    .fx{padding:10px;border-radius:11px}
+    .fx span{font-size:1rem}
+    .fx .ply{display:none}
+    .band .wrap{padding:48px 20px}
+    .st{flex-wrap:wrap}
+    .buybar{display:flex}
+  }
+  /* ---- DERIVADO de los tokens de arriba (nada mas que esto) ----
+     Son los valores que repetian un token a mano en rgba() y que por
+     eso no siguen al :root solos. Se reescriben APPEND, al final del
+     <style>, para que el diff contra el vivo quede acotado a dos
+     bloques y ninguna linea de precio, copy o video pueda entrar. */
+  /* el borde y el glow de los bonos repiten --acc3 */
+  .st{border:1px solid rgba(245,198,90,.34);box-shadow:0 0 0 1px rgba(245,198,90,.10),0 12px 30px -22px rgba(245,198,90,.85)}
+  /* el glow de la garantia repite --acc3 */
+  .guar{box-shadow:0 0 70px -26px rgba(245,198,90,.9),0 0 0 1px rgba(245,198,90,.16)}
+  /* la 2a capa del hero repite --acc3. Baja de .10 a .07 porque el ambar es mucho mas luminoso que el teal y al .10 sube el fondo del hero */
+  header{background:radial-gradient(90% 62% at 50% -4%,rgba(255,106,19,.16),transparent 66%),radial-gradient(70% 50% at 88% 6%,rgba(245,198,90,.07),transparent 62%)}
+</style>
+<script>
+/* PIXEL DE META: va en null a proposito. El pixel de esta oferta TODAVIA NO
+   EXISTE y Esteban decide cual. Poniendo el ID aqui se enciende solo. NO se
+   hereda el pixel del molde de CapCut: mediria otro producto. */
+var PIXEL_ID = null;
+if (PIXEL_ID) {
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', PIXEL_ID); fbq('track','PageView');
+}
+</script>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="logo"><span class="mark"><svg viewBox='0 0 24 24' width='18' height='18' fill='none' stroke='#0a0603' stroke-width='2.1' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='7.4'/><path d='M12 4.6v3M12 16.4v3M4.6 12h3M16.4 12h3M6.8 6.8l2.1 2.1M15.1 15.1l2.1 2.1M17.2 6.8l-2.1 2.1M8.9 15.1l-2.1 2.1'/></svg></span>MELAMINA<span class="sub">PRO</span></div>
+    <a href="#comprar" class="btn">Lo quiero</a>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <div class="pill">Curso de Carpinteria en Melamina &middot; <b>563 archivos</b></div>
+        <h1>Deja de cortar a ojo.<br>Fabrica muebles <span class="cut">que se venden</span>.</h1>
+        <p class="sub"><b>563 archivos</b> en <b>15 bloques por tema</b> (466 en video), del primer corte al mueble instalado y cobrado. Y te llevas la biblioteca entera de planos: <b>511 laminas acotadas</b> y 18 PDF listos para cortar.</p>
+        <div class="cta-row"><a href="#comprar" class="btn big" id="btn-hero">Ver la oferta &rarr;</a></div>
+        <div class="cta-note">Pago unico &middot; Acceso inmediato &middot; Es tuyo para siempre</div>
+      </div>
+      <div class="device" aria-hidden="true">
+        <div class="phone"><div class="screen">
+          <div class="pv">
+            <img class="pv-poster" src="../video/hero.jpg" alt="" fetchpriority="high" decoding="async">
+            <span class="tag">Closet 2.40 m</span><span class="rec">Despiece listo</span>
+          </div>
+          <div class="tl">
+            <div class="tools"><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="track">
+              <div class="clip a"></div><div class="scrub"></div>
+              <div class="clip b"></div><div class="clip c"></div><div class="clip d"></div>
+            </div>
+          </div>
+        </div></div>
+      </div>
+    </div>
+    <div class="badges"><div class="badge"><div class="n">563</div><div class="l">archivos del curso</div></div>
+      <div class="badge"><div class="n">511</div><div class="l">laminas acotadas</div></div>
+      <div class="badge"><div class="n">466</div><div class="l">clases en video</div></div>
+      <div class="badge"><div class="n">39</div><div class="l">accesos en total</div></div></div>
+  </div>
+</header>
+
+<!-- GALERIA DE VIDEO (mecanica del molde: thumbnail + iframe nocookie detras) -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Que vas a saber hacer</div>
+    <h2 class="title">Del tablero crudo al mueble montado</h2>
+    <p class="lead">El curso te lleva por todo el oficio: medir, despiezar, optimizar el corte, cantear, armar y montar. Estos son los trabajos de los que hablamos:</p>
+    <div class="gallery">
+      <div class="fx g1" data-v="v1.mp4"><img class="fx-th" src="../video/v1.jpg" alt="" loading="lazy"><span class="ply"></span><span>Corte y<br>armado</span></div>
+      <div class="fx g2" data-v="v2.mp4"><img class="fx-th" src="../video/v2.jpg" alt="" loading="lazy"><span class="ply"></span><span>Mueble<br>terminado</span></div>
+      <div class="fx g3" data-v="v3.mp4"><img class="fx-th" src="../video/v3.jpg" alt="" loading="lazy"><span class="ply"></span><span>Mesas y<br>escritorios</span></div>
+      <div class="fx g4" data-v="v4.mp4"><img class="fx-th" src="../video/v4.jpg" alt="" loading="lazy"><span class="ply"></span><span>Armarios<br>a medida</span></div>
+      <div class="fx g5" data-v="v5.mp4"><img class="fx-th" src="../video/v5.jpg" alt="" loading="lazy"><span class="ply"></span><span>Herrajes<br>y bisagras</span></div>
+      <div class="fx g6" data-v="v6.mp4"><img class="fx-th" src="../video/v6.jpg" alt="" loading="lazy"><span class="ply"></span><span>Cajones<br>y correderas</span></div>
+      <div class="fx g7" data-v="v7.mp4"><img class="fx-th" src="../video/v7.jpg" alt="" loading="lazy"><span class="ply"></span><span>Montaje<br>e instalacion</span></div>
+      <div class="fx g8" data-v="v8.mp4"><img class="fx-th" src="../video/v8.jpg" alt="" loading="lazy"><span class="ply"></span><span>Estructura<br>y despiece</span></div>
+    </div>
+    <p class="fx-note">Lo que ves moviendose son <b>los mismos clips que usamos en nuestros anuncios</b>, puestos aqui para que veas el tipo de trabajo del que hablamos. No son el contenido del curso: el curso son los 15 bloques listados mas abajo uno por uno, con los 563 archivos que tienen adentro.</p>
+  </div>
+</section>
+
+<!-- GATILLO 1 : ANCLAJE DE PRECIO (la suma de las piezas contra el precio de hoy) -->
+<section id="anclaje">
+  <div class="wrap" style="text-align:center">
+    <div class="eyebrow">Cuanto cuesta por separado</div>
+    <h2 class="title">Las mismas piezas, sumadas una por una</h2>
+    <p class="lead" style="margin:0 auto 4px">Estos no son precios inventados para tachar: son <b>los precios reales</b> a los que se vende cada pieza por su lado, aqui mismo, mas abajo.</p>
+    <div class="anchor">
+      <div class="row"><span>El curso completo en video</span><b id="anc-base">&nbsp;</b></div>
+      <div class="row"><span>Pack MUEBLE INDUSTRIAL en metal (4 packs &middot; 445 laminas)</span><b id="anc-fx">&nbsp;</b></div>
+      <div class="row"><span>Editables para cortar (60 archivos)</span><b id="anc-cin">&nbsp;</b></div>
+      <div class="row sum"><span>Comprando cada pieza por separado</span><b id="anc-suma">&nbsp;</b></div>
+      <div class="row hoy"><span>Todo junto, hoy</span><b id="anc-hoy">&nbsp;</b></div>
+    </div>
+    <p class="anchor-note">La diferencia es <b id="anc-ahorro">&nbsp;</b>. Sin cupos, sin reloj y sin letra chica: es simplemente mas barato en un solo pago que en tres.</p>
+    <div style="margin-top:28px"><a href="#comprar" class="btn big">Quiero todo junto &rarr;</a></div>
+  </div>
+</section>
+
+<!-- GATILLO 2 : ESPECIFICIDAD (cada numero sale de contar la fuente) -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Que vas a tener</div>
+    <h2 class="title">Contado, no prometido</h2>
+    <p class="lead">Cada numero de esta pagina salio de <b>contar la entrega real</b>, archivo por archivo. Ninguno esta redondeado hacia arriba.</p>
+    <div class="grid">
+      <div class="card"><div class="ic">&#127909;</div><h3>563 archivos en 15 bloques</h3><p>466 de ellos en video. El oficio en orden: medir, despiezar, optimizar el corte, cantear, armar, colgar puertas y cobrar. Y bloques enteros de SketchUp, Resina Epoxica y Polyboard.</p></div>
+      <div class="card"><div class="ic">&#128208;</div><h3>511 laminas acotadas</h3><p>Planos de melamina con la medida de cada pieza. Los abres y vas directo al tablero.</p></div>
+      <div class="card"><div class="ic">&#128196;</div><h3>18 PDF de planos</h3><p>Armarios, cocinas, roperos, escritorios, centros de TV, muebles infantiles y mas.</p></div>
+      <div class="card"><div class="ic">&#128230;</div><h3>5 carpetas del Mega Pack</h3><p>Catalogo en melamina, guia teorica, SketchUp Pro, ejemplos de armado y habitos de taller.</p></div>
+      <div class="card"><div class="ic">&#128295;</div><h3>60 archivos editables</h3><p>14 SketchUp, 11 AutoCAD, 33 DXF y 2 Excel de despiece. Cambias una medida y el corte se recalcula.</p></div>
+      <div class="card"><div class="ic">&#128273;</div><h3>39 accesos en total</h3><p>Todo queda en tu zona de descarga. Lo bajas a tu disco y es tuyo para siempre.</p></div>
+    </div>
+    <div style="margin-top:34px"><a href="#comprar" class="btn">Lo quiero completo &rarr;</a></div>
+  </div>
+</section>
+
+<!-- BANDA -->
+<section class="band" style="padding:0">
+  <img class="bg" src="../video/v2.jpg" alt="" loading="lazy">
+  <div class="wrap">
+    <div class="eyebrow">De la medida al mueble</div>
+    <h2>No son 15 videos: son 563 archivos en 15 bloques</h2>
+    <p>Medir, despiezar, optimizar el corte, cantear, armar, colgar puertas y cobrarlo: los 15 bloques van en ese orden. Y adentro no hay un solo tema: hay SketchUp, Resina Epoxica y Polyboard, y un Pack Mantenimiento del Hogar 360 con 351 videos mas.</p>
+  </div>
+</section>
+
+<!-- GATILLO 3 : PRUEBA DE ENTREGA (el paso a paso post-compra) -->
+<section style="background:var(--panel)">
+  <div class="wrap">
+    <div class="eyebrow">Como funciona</div>
+    <h2 class="title">Del pago al primer plano abierto, hoy</h2>
+    <p class="lead">No hay envio, no hay espera y no hay cupo de inscripcion. Es descarga directa.</p>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><h3>Pagas una vez</h3><p>Un solo pago, en la moneda de tu pais. No es suscripcion y no se renueva.</p></div>
+      <div class="step"><div class="num">2</div><h3>Se abre tu zona de descarga</h3><p>Al confirmar el pago llegas a la pagina con los 39 accesos, ordenados por bloque.</p></div>
+      <div class="step"><div class="num">3</div><h3>Abres y cortas</h3><p>Bajas el plano que necesitas hoy y empiezas. El resto queda ahi para cuando lo pidas.</p></div>
+    </div>
+    <div style="margin-top:34px"><a href="#comprar" class="btn">Empezar ahora &rarr;</a></div>
+  </div>
+</section>
+
+<!-- GATILLO 4 : OBJECION FRONTAL (las 4 que frenan el pago, dichas en voz alta) -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Hablemos claro</div>
+    <h2 class="title">Lo que estas pensando ahora mismo</h2>
+    <div class="obj">
+      <div class="ob"><h3>Yo no se usar AutoCAD</h3><p>No hace falta. Las 511 laminas y los 18 PDF se abren con el visor del celular: ya vienen acotados, solo lees la medida. Los 60 editables son un extra para quien quiera modificarlos, no el camino obligatorio.</p></div>
+      <div class="ob"><h3>No tengo un taller grande</h3><p>El corte del tablero lo hace el deposito donde compras la melamina, con tu lista de despiece. En casa necesitas atornillador, plancha para el canto y espacio para armar.</p></div>
+      <div class="ob"><h3>Soy principiante total</h3><p>El bloque 1 arranca en el tablero crudo: que es la melamina, que espesores hay y como se mide. No se asume nada previo.</p></div>
+      <div class="ob"><h3>Ya vi tutoriales gratis en YouTube</h3><p>Y son buenos. Lo que no tienen es el orden del oficio ni los planos acotados. Eso es lo que estas comprando: no informacion suelta, sino la secuencia y el material listo.</p></div>
+    </div>
+    <div style="margin-top:34px"><a href="#comprar" class="btn">Resuelto, lo quiero &rarr;</a></div>
+  </div>
+</section>
+
+<!-- CONTENIDO COMPLETO: sale entero de contar la entrega viva -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Contenido completo</div>
+    <h2 class="title">Bloque por bloque, sin relleno</h2>
+    <p class="lead">Cada numero de aqui fue <b>contado archivo por archivo</b> sobre la entrega real. Lo que ves es lo que hay.</p>
+    <div class="acc">
+      <details open>
+        <summary><span>1 &middot; Curso en video, bloque por bloque</span><span class="meta">15 bloques &middot; 563 archivos</span></summary>
+        <div class="acc-body">
+          <ul><li>1. Videos Melamina PRO &middot; <b>30 archivos &middot; 20 en video</b></li>
+<li>2. Manuales sobre Melamina &middot; <b>19 archivos</b></li>
+<li>3. Clases Adicionales &middot; <b>14 videos</b></li>
+<li>4. Planos y Plantillas &middot; <b>18 archivos</b></li>
+<li>5. Elaboracion de Muebles como Negocio &middot; <b>2 videos</b></li>
+<li>6. Diseno de Muebles Modulares como Negocio &middot; <b>27 videos</b></li>
+<li>7. Planos Explicados en Video &middot; <b>17 videos</b></li>
+<li>8. Planos y Proyectos de Carpinteria &middot; <b>16 archivos</b></li>
+<li>9. Aprende SketchUp &middot; <b>28 archivos &middot; 8 en video</b></li>
+<li>10. Aprende Polyboard &middot; <b>12 archivos &middot; 2 en video</b></li>
+<li>11. Carpinteria en Aluminio &middot; <b>2 archivos</b></li>
+<li>12. Soldadura Electrica &middot; <b>1 archivo</b></li>
+<li>13. Resina Epoxica &middot; <b>24 videos</b></li>
+<li>14. Bono: Descarga SketchUp &middot; <b>2 archivos &middot; 1 en video</b></li>
+<li>15. Pack Mantenimiento del Hogar 360 &middot; <b>351 videos</b></li></ul>
+        </div>
+      </details>
+      <details>
+        <summary><span>2 &middot; Planos y catalogos en PDF</span><span class="meta">18 archivos</span></summary>
+        <div class="acc-body">
+          <ul><li>100 Planos de Melamina (Despieces)</li>
+<li>Catalogo de Armarios</li>
+<li>Cocinas</li>
+<li>Libro de Cocinas</li>
+<li>Nuevo Libro de Cocina Avanzado</li>
+<li>Muebles de Cocina</li>
+<li>Disenar Cocina</li>
+<li>Centro de TV y Entretenimiento</li>
+<li>Comodas y Libreros</li>
+<li>Escritorios</li>
+<li>Roperos</li>
+<li>Muebles Infantiles</li>
+<li>Manual Melamina</li>
+<li>Muebles de Melamina</li>
+<li>Melamina y Planos (Conozcamos mas)</li>
+<li>Planos Drywall</li>
+<li>Variados</li>
+<li>Bono: Mueble Industrial (Metal + Madera)</li></ul>
+          <p style="margin-top:12px">Cada uno abre en el visor del celular. Los de despiece traen las medidas de cada pieza ya acotadas.</p>
+        </div>
+      </details>
+      <details>
+        <summary><span>3 &middot; Mega Pack de planos</span><span class="meta">5 carpetas</span></summary>
+        <div class="acc-body">
+          <ul><li>Catalogo en Melamina</li>
+<li>Guia Teorica</li>
+<li>SketchUp Pro</li>
+<li>Ejemplos y Tips para tus Armados</li>
+<li>Bono: Habitos Pro</li></ul>
+        </div>
+      </details>
+      <details>
+        <summary><span>4 &middot; Acceso extra a libros PRO</span><span class="meta">1 acceso</span></summary>
+        <div class="acc-body"><li>Acceso 2: Libros Muebles Industriales y mas</li></div>
+      </details></div>
+  </div>
+</section>
+
+<!-- GATILLO 6 : BONOS APILADOS con su valor suelto tachado -->
+<section style="background:var(--panel)">
+  <div class="wrap">
+    <div class="eyebrow">Lo que se apila encima</div>
+    <h2 class="title">Todo lo que entra, con su precio suelto</h2>
+    <p class="lead">Cada uno se vende por su lado al precio que ves tachado. Entrando por aqui, entran juntos.</p>
+    <div class="stack">
+      <div class="st"><div class="ic">&#128230;</div><div class="tt"><b>Curso completo en video</b><small>563 archivos en 15 bloques, del tablero crudo al mueble instalado y cobrado, mas la biblioteca de 511 laminas y 18 PDF</small></div><div class="vv"><s id="st-1">&nbsp;</s><em>incluido</em></div></div>
+      <div class="st"><div class="ic">&#128295;</div><div class="tt"><b>Pack MUEBLE INDUSTRIAL en metal</b><small>4 packs, 445 laminas acotadas, 1344 paginas de proyectos en acero y madera</small></div><div class="vv"><s id="st-2">&nbsp;</s><em>marcalo abajo</em></div></div>
+      <div class="st"><div class="ic">&#128187;</div><div class="tt"><b>Editables para cortar</b><small>60 archivos: 14 SketchUp, 11 AutoCAD, 33 DXF, 2 Excel de despiece</small></div><div class="vv"><s id="st-3">&nbsp;</s><em>marcalo abajo</em></div></div>
+      <div class="st"><div class="ic">&#128218;</div><div class="tt"><b>Mega Pack de planos</b><small>5 carpetas: catalogo, guia teorica, SketchUp Pro, ejemplos de armado</small></div><div class="vv"><em>incluido</em></div></div>
+    </div>
+    <div style="margin-top:34px"><a href="#comprar" class="btn big">Armar mi pack &rarr;</a></div>
+  </div>
+</section>
+
+<!-- PRECIO / CTA -->
+<section id="comprar">
+  <div class="wrap" style="text-align:center">
+    <div class="eyebrow">Empieza hoy</div>
+    <h2 class="title">Arma tu pack, un solo pago</h2>
+    <div class="price-card">
+      <div style="color:var(--mut);font-size:.9rem">Precio de hoy</div>
+      <div class="price-now" id="precio-grande">&nbsp;</div>
+      <div style="color:var(--mut);margin-top:2px">pago unico &middot; acceso de por vida</div>
+      <div style="color:var(--dim);font-size:.85rem;margin-top:10px">Pagas en la moneda de tu pais, al cambio del dia.</div>
+      <ul class="price-list"><li><b>Curso completo</b>: 563 archivos en 15 bloques por tema (466 en video), de cero al mueble instalado</li>
+<li><b>De regalo</b>: 511 laminas acotadas de melamina, listas para cortar</li>
+<li><b>De regalo</b>: 18 PDF de planos y catalogos (armarios, cocinas, roperos...)</li>
+<li><b>De regalo</b>: Mega Pack de 5 carpetas de planos y guias</li>
+<li>39 accesos en total, tuyos para siempre</li>
+<li>Garantia de 3 dias sin preguntas</li></ul>
+      <div class="bumps">
+        <label class="bump" id="bump-fx">
+          <input type="checkbox"><span class="bx"></span>
+          <span class="bt">&#128295; <b>Pack MUEBLE INDUSTRIAL en metal</b><small>4 packs con 445 laminas acotadas en 1344 paginas: acero y madera, muebles industriales.</small></span>
+          <span class="bp" id="bp-fx">&nbsp;</span>
+        </label>
+        <label class="bump" id="bump-cin">
+          <input type="checkbox"><span class="bx"></span>
+          <span class="bt">&#128187; <b>Editables para cortar</b><small>60 archivos que se abren y se modifican: 14 SketchUp, 11 AutoCAD, 33 DXF y 2 Excel de despiece.</small></span>
+          <span class="bp" id="bp-cin">&nbsp;</span>
+        </label>
+        <div class="bump-nota" id="bump-nota">&nbsp;</div>
+      </div>
+      <a href="#comprar" class="btn big" id="btn-pago" aria-disabled="true">Checkout pendiente</a>
+      <div class="cta-note">Pago seguro &middot; Acceso inmediato al confirmar</div>
+    </div>
+    <div class="aviso" id="aviso-checkout">&#9888;&#65039; <b>Pagina en preparacion:</b> el boton de pago se activa cuando Esteban cargue los links de checkout de esta oferta. Hasta entonces no cobra nada.</div>
+  </div>
+</section>
+
+<!-- GARANTIA -->
+<section style="background:var(--panel)">
+  <div class="wrap">
+    <div class="guar">
+      <div class="shield">&#128737;&#65039;</div>
+      <h2 class="title" style="margin-bottom:10px">Garantia de 3 dias</h2>
+      <p class="lead" style="margin:0 auto">Si en los primeros 3 dias el material no es lo que esperabas, se devuelve el <b>100%</b> de tu dinero. Sin preguntas y sin letra chica. El riesgo es nuestro, no tuyo.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Preguntas frecuentes</div>
+    <h2 class="title">Lo que todos preguntan</h2>
+    <div class="acc">
+      <details><summary><span>&iquest;Como recibo el material?</span></summary><div class="acc-body">Apenas se confirma el pago llegas a tu zona de descarga privada con los 39 accesos ordenados por bloque. Descargas lo que quieras a tu disco y es tuyo para siempre.</div></details>
+      <details><summary><span>&iquest;Necesito experiencia previa en carpinteria?</span></summary><div class="acc-body">No. El primer bloque arranca en el tablero crudo: que es la melamina, que espesores existen y como se mide. De ahi sube hasta el mueble instalado.</div></details>
+      <details><summary><span>&iquest;Necesito maquinas caras?</span></summary><div class="acc-body">No para empezar. El corte del tablero lo hace el deposito donde compras la melamina con tu lista de despiece. Para armar necesitas atornillador, una plancha para el tapacanto y herramienta de mano.</div></details>
+      <details><summary><span>&iquest;Los planos traen las medidas?</span></summary><div class="acc-body">Si. Las 511 laminas son planos <b>acotados</b>: cada pieza con su medida. Ademas hay 18 PDF de planos y catalogos, y 3 PDF especificos de despiece.</div></details>
+      <details><summary><span>&iquest;Es un pago mensual?</span></summary><div class="acc-body">No. Es un pago unico. No se renueva, no es suscripcion y el acceso no vence.</div></details>
+      <details><summary><span>&iquest;Y si no me sirve?</span></summary><div class="acc-body">Tienes 3 dias de garantia. Si el material no es lo que esperabas escribes y se devuelve el 100%, sin preguntas y sin letra chica.</div></details></div>
+    <div style="margin-top:34px;text-align:center"><a href="#comprar" class="btn big">Quiero mi acceso &rarr;</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="logo" style="justify-content:center;margin-bottom:12px"><span class="mark"><svg viewBox='0 0 24 24' width='18' height='18' fill='none' stroke='#0a0603' stroke-width='2.1' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='7.4'/><path d='M12 4.6v3M12 16.4v3M4.6 12h3M16.4 12h3M6.8 6.8l2.1 2.1M15.1 15.1l2.1 2.1M17.2 6.8l-2.1 2.1M8.9 15.1l-2.1 2.1'/></svg></span>MELAMINA<span class="sub">PRO</span></div>
+    <p>&copy; 2026 &middot; Material educativo de carpinteria. Entrega digital inmediata.</p>
+    <p class="disc">Los videos que se ven en esta pagina son los mismos clips que usamos en nuestros anuncios, alojados en esta pagina y mostrados como ejemplo del oficio. No forman parte del material que se entrega. El material del curso y los planos son la entrega digital descrita arriba. Las marcas de herramienta, software o tableros mencionadas pertenecen a sus duenos; este es material educativo independiente.</p>
+  </div>
+</footer>
+
+<div class="buybar" id="buybar">
+  <div class="p"><span id="buybar-precio">&nbsp;</span><small>pago unico &middot; acceso de por vida</small></div>
+  <a href="#comprar" class="btn">Lo quiero</a>
+</div>
+
+<script>
+/* VIDEO: los clips son los mismos creativos que corren en nuestros anuncios de
+   Meta, alojados en este repo. Ya no hay iframe ni tercero: <video> del mismo
+   origen, mudo, en loop y sin controles.
+   Se conserva la mecanica de peso que se gano antes: el HERO arranca de una (no
+   espera window.load, que no dispara hasta que termina todo lo demas) y los 8
+   mini entran por IntersectionObserver, de a 3 vivos como maximo; el que sale de
+   pantalla suelta su descarga y vuelve a su poster. */
+(function(){
+  var BASE = '../video/';
+  var con = navigator.connection || {};
+  var lento = con.saveData === true || /(^|-)2g$/.test(con.effectiveType || '');
+  if (lento) return; /* internet lento o ahorro de datos: solo posters, cero video */
+
+  function prender(el, arch, clase){
+    var v = el.querySelector('video.' + clase);
+    if (!v){
+      v = document.createElement('video');
+      v.className = clase;
+      v.muted = true; v.defaultMuted = true; v.loop = true;
+      v.playsInline = true;
+      v.setAttribute('muted', ''); v.setAttribute('playsinline', '');
+      v.setAttribute('aria-hidden', 'true'); v.tabIndex = -1;
+      el.appendChild(v);
+    }
+    if (!v.getAttribute('src')){ v.preload = 'auto'; v.src = BASE + arch; }
+    var p = v.play(); if (p && p['catch']) p['catch'](function(){});
+    return v;
+  }
+
+  /* 1. EL HERO, DE UNA. Es lo primero que se ve: es lo primero que se pide. */
+  var pv = document.querySelector('.pv');
+  if (pv) prender(pv, 'hero.mp4', 'vd-hero');
+
+  /* 2. LOS 8 MINI: solo cuando entran en pantalla, y de a 3. */
+  var TILES = [].slice.call(document.querySelectorAll('.fx[data-v]'));
+
+  if (!('IntersectionObserver' in window)){
+    /* fail-safe: navegador sin observer -> todos, como antes. Nunca sin video. */
+    TILES.forEach(function(c){ prender(c, c.dataset.v, 'vd-live'); });
+    return;
+  }
+
+  var TOPE = 3, VIVOS = [];
+  function soltar(c){
+    var v = c.querySelector('video.vd-live');
+    if (v){ v.pause(); v.removeAttribute('src'); v.load(); /* corta la descarga */
+            if (v.parentNode) v.parentNode.removeChild(v); }
+    var i = VIVOS.indexOf(c); if (i >= 0) VIVOS.splice(i, 1);
+  }
+  function podar(){            /* el cupo se hace soltando a los que ya no se ven */
+    for (var i = VIVOS.length - 1; i >= 0; i--) if (!VIVOS[i].visible) soltar(VIVOS[i]);
+  }
+  function encender(c){
+    if (!c.visible || c.querySelector('video.vd-live')) return;
+    podar();
+    if (VIVOS.length >= TOPE) return;  /* cupo lleno de visibles: se queda el poster */
+    prender(c, c.dataset.v, 'vd-live');
+    VIVOS.push(c);
+  }
+  var io = new IntersectionObserver(function(ens){
+    ens.forEach(function(e){ e.target.visible = e.isIntersecting; });
+    podar();
+    TILES.forEach(encender);
+  }, {rootMargin:'100px 0px'});
+  TILES.forEach(function(c){ io.observe(c); });
+})();
+</script>
+
+<script>
+(function(){
+  var bar=document.getElementById('buybar'), comprar=document.getElementById('comprar');
+  if(bar && comprar && 'IntersectionObserver' in window){
+    new IntersectionObserver(function(en){
+      bar.style.display = en[0].isIntersecting ? 'none' : '';
+    }).observe(comprar);
+  }
+})();
+</script>
+
+<script>
+(function(){
+  /* ── CHECKOUT ───────────────────────────────────────────────────────────
+     LK va a PLACEHOLDER a proposito. Los links de Stripe del molde de CapCut
+     cobran OTRO producto (acct_1U4Vcs): ponerlos aqui le cobraria al
+     carpintero el curso de edicion de video. Cuando existan los 4 payment
+     links de esta oferta se pegan aqui y se pone BLOQUEADO en false.       */
+  var LK={base:'PENDIENTE-CHECKOUT',fx:'PENDIENTE-CHECKOUT',cin:'PENDIENTE-CHECKOUT',todo:'PENDIENTE-CHECKOUT'};
+  var BLOQUEADO = true;   /* <- false cuando LK tenga links reales */
+  var PR={base:'9.99',fx:'11.98',cin:'11.98',todo:'12.99'};
+
+  var REF=null;
+  try{
+    var q=new URLSearchParams(location.search);
+    REF=q.get('ad')||q.get('utm_content')||null;
+    if(REF){ REF=REF.replace(/[^A-Za-z0-9_-]/g,'').slice(0,60)||null; if(REF) sessionStorage.setItem('melaminaRef',REF); }
+    if(!REF) REF=sessionStorage.getItem('melaminaRef');
+    if(!REF && (q.get('fbclid')||/facebook\.com|instagram\.com/.test(document.referrer))) REF='MELAMINA-META-SINTAG';
+  }catch(e){}
+  function conRef(u){ return REF ? u+'&client_reference_id='+REF : u; }
+
+  var TAB={"COP":{"9.99":33900,"11.98":40700,"12.99":44100},"MXN":{"9.99":179,"11.98":215,"12.99":233},"BRL":{"9.99":53.99,"11.98":64.7,"12.99":70.2},"PEN":{"9.99":35.99,"11.98":43.2,"12.99":46.8},"CLP":{"9.99":9900,"11.98":11900,"12.99":12900},"ARS":{"9.99":16900,"11.98":20300,"12.99":22000},"UYU":{"9.99":429,"11.98":515,"12.99":558},"GTQ":{"9.99":79.99,"11.98":96,"12.99":104},"HNL":{"9.99":289,"11.98":347,"12.99":376},"NIO":{"9.99":389,"11.98":467,"12.99":506},"CRC":{"9.99":4749,"11.98":5700,"12.99":6180},"DOP":{"9.99":609,"11.98":730,"12.99":792},"PYG":{"9.99":62900,"11.98":75400,"12.99":81800},"BOB":{"9.99":129,"11.98":155,"12.99":168}};
+  var TZ2CC={"America/Bogota":"CO","America/Mexico_City":"MX","America/Cancun":"MX","America/Merida":"MX","America/Monterrey":"MX","America/Matamoros":"MX","America/Chihuahua":"MX","America/Ciudad_Juarez":"MX","America/Ojinaga":"MX","America/Hermosillo":"MX","America/Mazatlan":"MX","America/Bahia_Banderas":"MX","America/Tijuana":"MX","America/Lima":"PE","America/Santiago":"CL","America/Punta_Arenas":"CL","Pacific/Easter":"CL","America/Guatemala":"GT","America/Tegucigalpa":"HN","America/Managua":"NI","America/Costa_Rica":"CR","America/Santo_Domingo":"DO","America/Asuncion":"PY","America/Montevideo":"UY","America/La_Paz":"BO","America/Buenos_Aires":"AR","America/Cordoba":"AR","America/Mendoza":"AR","America/Rosario":"AR","America/Catamarca":"AR","America/Jujuy":"AR","America/Sao_Paulo":"BR","America/Bahia":"BR","America/Fortaleza":"BR","America/Recife":"BR","America/Belem":"BR","America/Manaus":"BR","America/Cuiaba":"BR","America/Campo_Grande":"BR","America/Porto_Velho":"BR","America/Boa_Vista":"BR","America/Rio_Branco":"BR","America/Maceio":"BR","America/Araguaina":"BR","America/Santarem":"BR","America/Eirunepe":"BR","America/Noronha":"BR","America/Sao_Luis":"BR","America/Guayaquil":"EC","America/El_Salvador":"SV","America/Panama":"PA","America/Argentina":"AR","America/Santa_Isabel":"MX"};
+  var MONEDAS={CO:"COP",MX:"MXN",PE:"PEN",CL:"CLP",AR:"ARS",BR:"BRL",GT:"GTQ",HN:"HNL",NI:"NIO",CR:"CRC",DO:"DOP",PY:"PYG",UY:"UYU",BO:"BOB",EC:null,SV:null,PA:null};
+  var SIM={COP:"$",MXN:"$",ARS:"$",CLP:"$",UYU:"$",DOP:"RD$",PEN:"S/",BRL:"R$",GTQ:"Q",HNL:"L",NIO:"C$",CRC:"\u20a1",PYG:"\u20b2",BOB:"Bs"};
+  var LOC={COP:"es-CO",MXN:"es-MX",ARS:"es-AR",CLP:"es-CL",PEN:"es-PE",UYU:"es-UY",BOB:"es-BO",PYG:"es-PY",GTQ:"es-GT",HNL:"es-HN",NIO:"es-NI",CRC:"es-CR",DOP:"es-DO",BRL:"pt-BR"};
+  var MON=null;
+  try{
+    var tz=(Intl.DateTimeFormat().resolvedOptions().timeZone)||"";
+    var cc=TZ2CC[tz]||TZ2CC[tz.replace("/Argentina/","/")]||TZ2CC[String(tz).split("/").slice(0,2).join("/")]||null;
+    var cur=cc?MONEDAS[cc]:null;
+    if(cur&&TAB[cur]) MON={cur:cur,t:TAB[cur]};
+  }catch(e){}
+  function fnum(n){
+    var dec=(n%1!==0)?2:0;
+    return SIM[MON.cur]+n.toLocaleString(LOC[MON.cur]||"es",{minimumFractionDigits:dec,maximumFractionDigits:dec})+" "+MON.cur;
+  }
+  function val(k){ return MON ? MON.t[PR[k]] : parseFloat(PR[k]); }
+  function fmt(n){ return MON ? fnum(n) : '$'+(Math.round(n*100)/100).toFixed(2)+' USD'; }
+  function precio(k){ return fmt(val(k)); }
+  function pon(id,t){ var e=document.getElementById(id); if(e) e.textContent=t; }
+
+  var fx=document.querySelector('#bump-fx input'),cin=document.querySelector('#bump-cin input');
+  var btn=document.getElementById('btn-pago'),big=document.getElementById('precio-grande'),nota=document.getElementById('bump-nota');
+
+  /* ANCLAJE: la suma de las piezas sueltas contra el precio de hoy.
+     Todo sale de PR/TAB, o sea de los precios que se cobran de verdad. */
+  var dFx=val('fx')-val('base'), dCin=val('cin')-val('base');
+  var suma=val('base')+dFx+dCin, hoy=val('todo');
+  pon('anc-base',fmt(val('base'))); pon('anc-fx',fmt(dFx)); pon('anc-cin',fmt(dCin));
+  pon('anc-suma',fmt(suma)); pon('anc-hoy',fmt(hoy)); pon('anc-ahorro',fmt(suma-hoy));
+  pon('st-1',fmt(val('base'))); pon('st-2',fmt(dFx)); pon('st-3',fmt(dCin));
+
+  function up(){
+    var k = fx.checked&&cin.checked ? 'todo' : fx.checked ? 'fx' : cin.checked ? 'cin' : 'base';
+    var p=precio(k);
+    if(BLOQUEADO){
+      btn.removeAttribute('href');
+      btn.setAttribute('aria-disabled','true');
+      btn.textContent='Checkout pendiente \u00b7 '+p;
+    } else {
+      btn.href=conRef(LK[k]);
+      btn.removeAttribute('aria-disabled');
+      btn.textContent='Quiero mi acceso ahora \u00b7 '+p+' \u2192';
+      var av=document.getElementById('aviso-checkout'); if(av) av.style.display='none';
+    }
+    big.textContent=p;
+    pon('buybar-precio',p);
+    document.getElementById('bump-fx').classList.toggle('on',fx.checked);
+    document.getElementById('bump-cin').classList.toggle('on',cin.checked);
+    var pTodo=fmt(hoy), ah=fmt(suma-hoy);
+    nota.innerHTML = (k==='todo')
+      ? '\ud83c\udf89 Te llevas <b>TODO por '+pTodo+'</b> ('+ah+' menos que por separado)'
+      : 'Marca los dos y te llevas <b>TODO por '+pTodo+'</b>: '+ah+' menos que por separado';
+  }
+  var hb=document.getElementById('btn-hero'); if(hb) hb.textContent='Empezar hoy \u00b7 '+precio('base')+' \u2192';
+  pon('bp-fx','+'+fmt(dFx)); pon('bp-cin','+'+fmt(dCin));
+  fx.addEventListener('change',up); cin.addEventListener('change',up);
+  up();
+})();
+</script>
+</body>
+</html>
