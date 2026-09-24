@@ -771,10 +771,10 @@ if (PIXEL_ID) {
   }catch(e){}
   function fnum(n){
     var dec=(n%1!==0)?2:0;
-    return SIM[MON.cur]+n.toLocaleString(LOC[MON.cur]||"es",{minimumFractionDigits:dec,maximumFractionDigits:dec})+" "+MON.cur;
+    return SIM[MON.cur]+n.toLocaleString(LOC[MON.cur]||"es",{minimumFractionDigits:dec,maximumFractionDigits:dec});
   }
   function val(k){ return MON ? MON.t[PR[k]] : parseFloat(PR[k]); }
-  function fmt(n){ return MON ? fnum(n) : '$'+(Math.round(n*100)/100).toFixed(2)+' USD'; }
+  function fmt(n){ return MON ? fnum(n) : '$'+(Math.round(n*100)/100).toFixed(2); }
   function precio(k){ return fmt(val(k)); }
   function pon(id,t){ var e=document.getElementById(id); if(e) e.textContent=t; }
 
